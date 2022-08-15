@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="bg-dark">
+            <h1 class="text-white text-center p-5" >Carrito de Compra</h1>
+        </header>
+
+        <main>
+
+            <form action="">
+
+                <label for="id">ID</label>
+                <input type="number" id="id" name="id" class="form-control" autocomplete="off">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" autocomplete="off">
+
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio" class="form-control" autocomplete="off">
+
+                <input type="button" value = "Guardar" class="btn btn-success mt-3" onclick="guardarRegistro()">
+
+            </form>
+
+            <hr>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody id="detalle">
+                    
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+
+</body>
+</html>
